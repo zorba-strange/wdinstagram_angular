@@ -9,7 +9,7 @@
     ]);
   
    function InstaIndexControllerFunction(InstaFactory){
-     InstaFactory.helloWorld();
+     this.instas = InstaFactory.query();
    }
 })();
  

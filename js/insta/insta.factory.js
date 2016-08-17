@@ -4,14 +4,11 @@
   angular
     .module("instas")
     .factory("InstaFactory", [
+        "$resource",
         InstaFactoryFunction
     ]);
-  function InstaFactoryFunction(){
-    return {
-      helloWorld: function(){
-        console.log("hello world")
-      }
-    }
+  function InstaFactoryFunction($resource){
+    return $resource( "http://localhost:3000/entries" );
   }
 })();
 

@@ -3,14 +3,23 @@ body {
 }
 
 .home {
-  margin: 5em auto;
+  margin: 5em auto 0 auto;
   text-align: center;
+}
+.home_link{
+  border-bottom: 2px solid violet;
 }
 
 .home_link:hover{
-  color: violet
+  color: violet;
+  border-color: black;
 }
 
 .insta_index {
   margin: 0 auto;
+}
+
+.h2_title {
+  margin: 0 auto;
+  text-align: center;
 }
