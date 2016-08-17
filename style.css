@@ -1,0 +1,16 @@
+body {
+  font-family:'Denk One', sans-serif;
+}
+
+.home {
+  margin: 15em auto;
+  text-align: center;
+}
+
+.home_link:hover{
+  color: violet
+}
+
+.insta_index {
+  margin: 0 auto;
+}
