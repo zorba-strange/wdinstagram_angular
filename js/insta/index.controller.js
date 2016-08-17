@@ -3,8 +3,13 @@
 (function(){
   angular
     .module("instas")
-    .contoller("InstaIndexController", [
+    .controller("InstaIndexController", [
+        "InstaFactory",
         InstaIndexControllerFunction
     ]);
   
-    
+   function InstaIndexControllerFunction(InstaFactory){
+     InstaFactory.helloWorld();
+   }
+})();
+ 

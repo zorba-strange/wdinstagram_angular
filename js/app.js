@@ -4,7 +4,7 @@
   angular
     .module("wdinstagram", [
       "ui.router",
-      "insta"
+      "instas"
   ])
     .config([
         "$stateProvider",
