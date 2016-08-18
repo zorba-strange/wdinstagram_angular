@@ -20,5 +20,12 @@
         controller: "InstaIndexController",
         controllerAs: "IIvm"
       })
+    .state("instaShow", {
+      url: "/instas/:id",
+      templateUrl: "js/insta/show.html",
+      controller: "InstaShowController",
+      controllerAs: "ISvm"
+    });
+    
   }
 })();

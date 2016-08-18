@@ -1,5 +1,5 @@
-<div class="insta_index">
-  <h2 class="h2_title">Pic a Pic</h2>
-  <div class="index_pics" data-ng-repeat="pic in IIvm.instas">
-    <img data-ng-src="{{pic.photo_url}}">
+<h2 class="h2_title">Pic a Pic</h2>
+  <div data-ng-repeat="insta in IIvm.instas">
+    <a class="index_pics" data-ui-sref="instaShow({id:
+    insta.id})"><img class="pics" data-ng-src="{{insta.photo_url}}"></a>
 </div>

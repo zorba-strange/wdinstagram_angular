@@ -1,5 +1,8 @@
 body {
   font-family:'Denk One', sans-serif;
+  max-width: 70em;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .home {
@@ -15,11 +18,40 @@ body {
   border-color: black;
 }
 
+.index_pics {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.show_wrapper {
+  text-align: center;
+}
+
+.show_pic {
+  margin: 0 auto;
+  height: 75%;
+  width: 75%;
+}
+
+.pics {
+  margin: .5em auto;
+  height: 25%;
+  width: 25%;
+}
+
+.pics:hover {
+  height: 30%;
+  width: 30%
+}
+
 .insta_index {
   margin: 0 auto;
+  height: 100vh;
 }
 
 .h2_title {
-  margin: 0 auto;
+  margin: 0 auto .5em auto;
   text-align: center;
+  border-bottom: 2px violet solid;
 }
