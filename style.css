@@ -1,7 +1,6 @@
 body {
   font-family:'Denk One', sans-serif;
-  max-width: 70em;
-  height: 100vh;
+  max-height: 100vh;
   margin: 0 auto;
 }
 
@@ -36,13 +35,13 @@ body {
 
 .pics {
   margin: .5em auto;
-  height: 25%;
-  width: 25%;
+  height: 50%;
+  width: 50%;
 }
 
 .pics:hover {
-  height: 30%;
-  width: 30%
+  height: 60%;
+  width: 60%;
 }
 
 .insta_index {
@@ -50,8 +49,20 @@ body {
   height: 100vh;
 }
 
-.h2_title {
+.h3_title, .h2_title {
   margin: 0 auto .5em auto;
   text-align: center;
   border-bottom: 2px violet solid;
+}
+a, .h3_title{
+  text-decoration: none;
+  color: black;
+}
+.h3_title{
+  border: 2px solid violet;
+  display: inline;
+}
+.h3_title:hover{
+  color: violet;
+  border-color: black;
 }

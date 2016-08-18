@@ -3,9 +3,9 @@
 (function(){
   angular
     .module("wdinstagram", [
-      "ui.router",
-      "instas"
-  ])
+        "ui.router",
+        "instas"
+    ])
     .config([
         "$stateProvider",
         RouterFunction
@@ -20,12 +20,26 @@
         controller: "InstaIndexController",
         controllerAs: "IIvm"
       })
+    .state("instaNew", {
+      url: "/instas/new",
+      templateUrl: "js/insta/new.html",
+      controller: "InstaNewController",
+      controllerAs: "INvm"
+    })
+
     .state("instaShow", {
       url: "/instas/:id",
       templateUrl: "js/insta/show.html",
       controller: "InstaShowController",
       controllerAs: "ISvm"
+    })
+
+    .state("instaEdit", {
+      url: "/instas/edit/:id",
+      templateUrl: "js/insta/edit.html",
+      controller: "InstaEditController",
+      controllerAs: "IEvm"
     });
-    
+
   }
 })();
